@@ -103,7 +103,7 @@
         "title" : "寒枫的五子棋",
         "router" : {
             "mode" : "hash",
-            "base" : "/play/gomoku/"
+            "base" : "/game/gomoku/"
         },
         "template" : "index.html"
     },
