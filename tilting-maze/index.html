@@ -1,4 +1,11 @@
-body {
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>倾斜迷宫游戏</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+     <style>
+      body {
   --background-color: #ede6e3;
   --wall-color: #36382e;
   --joystick-color: #210124;
@@ -194,3 +201,56 @@ a:visited {
   width: 18px;
   height: 18px;
 }
+
+/* 移动端布局调整 */
+@media (max-width: 768px) {
+  #game {
+    grid-template-columns: 1fr; /* 单列布局 */
+    grid-template-rows: auto auto auto; /* 三行布局 */
+    justify-items: center; /* 内容居中 */
+    padding: 20px;
+  }
+  
+  #maze {
+    grid-row: 1; /* 迷宫在第一行 */
+    grid-column: 1;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  #joystick {
+    grid-row: 2; /* 操纵杆在第二行（迷宫下方） */
+    grid-column: 1;
+    margin: 20px 0;
+  }
+  
+  #note {
+    grid-row: 3; /* 说明文字在第三行 */
+    grid-column: 1;
+    margin-top: 10px;
+  }
+}
+     </style>
+  </head>
+  <body>
+    <div id="center">
+      <div id="game">
+        <div id="maze">
+          <div id="end"></div>
+        </div>
+        <div id="joystick">
+          <div class="joystick-arrow"></div>
+          <div class="joystick-arrow"></div>
+          <div class="joystick-arrow"></div>
+          <div class="joystick-arrow"></div>
+          <div id="joystick-head"></div>
+        </div>
+        <div id="note">
+          点击操纵杆开始游戏！
+          <p>将所有小球移到中心。准备好挑战困难模式了吗？按H键</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
