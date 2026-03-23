@@ -11,28 +11,32 @@
 ## 游戏列表 | Games
 
 <!-- GAMES-LIST:START -->
-| 图标 | 名称 | 链接 | 描述 |
-|:----:|------|------|------|
-| 🔢 | 2048 | [在线游玩](./2048/index.html) | 经典数字拼图游戏 |
-| ⬛ | 黑块挑战 | [在线游玩](./blackblocks/index.html) | Black Blocks - 反应速度测试 |
-| 🧱 | 打砖块 | [在线游玩](./breakout-bricks/index.html) | Breakout Bricks - 经典街机游戏 |
-| 🐔 | 过马路大冒险 | [在线游玩](./crossy-road/index.html) | Crossy Road - 帮助小鸡过马路 |
-| ⚫ | 五子棋 | [在线游玩](./gomoku/index.html) | Gomoku - 双人对战五子棋 |
-| 💣 | 扫雷 | [在线游玩](./minesweeper/index.html) | Minesweeper - 经典扫雷游戏 |
-| 🏓 | 乒乓球 | [在线游玩](./ping-pong/index.html) | Ping Pong - 乒乓球对战 |
-| 🔢 | 数独 | [在线游玩](./shudu/index.html) | Sudoku - 数独谜题挑战 |
-| 🐍 | 贪吃蛇 | [在线游玩](./snake/index.html) | Snake - 经典贪吃蛇游戏 |
-| 🟦 | 俄罗斯方块 | [在线游玩](./tetris/index.html) | Tetris - 经典方块消除 |
-| 🏗️ | 堆塔挑战 | [在线游玩](./tower-blocks/index.html) | Tower Blocks - 堆叠高塔 |
-| 🧸 | 抓娃娃机 | [在线游玩](./toy-claw/index.html) | Toy Claw - 模拟抓娃娃体验 |
+
+| 图标 | 名称         | 链接                                  | 描述                           |
+| :--: | ------------ | ------------------------------------- | ------------------------------ |
+|  🔢  | 2048         | [在线游玩](./2048/index.html)            | 经典数字拼图游戏               |
+|  ⬛  | 黑块挑战     | [在线游玩](./blackblocks/index.html)     | Black Blocks - 反应速度测试    |
+|  🧱  | 打砖块       | [在线游玩](./breakout-bricks/index.html) | Breakout Bricks - 经典街机游戏 |
+|  🐔  | 过马路大冒险 | [在线游玩](./crossy-road/index.html)     | Crossy Road - 帮助小鸡过马路   |
+|  ⚫  | 五子棋       | [在线游玩](./gomoku/index.html)          | Gomoku - 双人对战五子棋        |
+|  💣  | 扫雷         | [在线游玩](./minesweeper/index.html)     | Minesweeper - 经典扫雷游戏     |
+|  🏓  | 乒乓球       | [在线游玩](./ping-pong/index.html)       | Ping Pong - 乒乓球对战         |
+|  🔢  | 数独         | [在线游玩](./shudu/index.html)           | Sudoku - 数独谜题挑战          |
+|  🐍  | 贪吃蛇       | [在线游玩](./snake/index.html)           | Snake - 经典贪吃蛇游戏         |
+|  🟦  | 俄罗斯方块   | [在线游玩](./tetris/index.html)          | Tetris - 经典方块消除          |
+| 🏗️ | 堆塔挑战     | [在线游玩](./tower-blocks/index.html)    | Tower Blocks - 堆叠高塔        |
+|  🧸  | 抓娃娃机     | [在线游玩](./toy-claw/index.html)        | Toy Claw - 模拟抓娃娃体验      |
+
 <!-- GAMES-LIST:END -->
 
 ## 快速开始 | Quick Start
 
 ### 在线游玩
+
 直接访问 GitHub Pages 或打开任意游戏目录下的 `index.html` 文件即可游玩。
 
 ### 本地运行
+
 ```bash
 # 克隆仓库
 git clone https://github.com/hanphonejan/hanphone-game.git
@@ -69,23 +73,10 @@ hanphone-game/
 ├── index.html          # 游戏导航主页
 └── README.md           # 项目说明文档
 ```
+## Star History
 
-## 技术栈 | Tech Stack
-
-- **HTML5** - 页面结构与 Canvas 绘图
-- **CSS3** - 样式设计与动画效果
-- **JavaScript** - 游戏逻辑与交互
-
-## 贡献指南 | Contributing
-
-欢迎提交 Pull Request 来改进游戏或添加新功能！
-
-1. Fork 本仓库
-2. 创建你的功能分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`git commit -m 'feat: add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 打开一个 Pull Request
-
-## License
-
-[MIT](LICENSE) © Hanphone
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=HanphoneJan/hanphone-game&type=Date&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=HanphoneJan/hanphone-game&type=Date" />
+  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=HanphoneJan/hanphone-game&type=Date" />
+</picture>
