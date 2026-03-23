@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanphone Game Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            padding: 20px 0;
+        }
+
+        .game-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-icon {
+            font-size: 4rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .game-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .play-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 24px;
+            border-radius: 24px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .game-card:hover .play-btn {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: white;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .game-grid {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 16px;
+            }
+
+            .game-card {
+                padding: 24px;
+            }
+
+            .game-icon {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .game-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎮 Hanphone Game Collection</h1>
+        <p>12 款有趣的 HTML5 小游戏，即点即玩</p>
+    </header>
+
+    <main>
+        <div class="game-grid" id="gameGrid"></div>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by Hanphone | Licensed under <a href="LICENSE">MIT License</a></p>
+    </footer>
+
+    <script>
+        const games = [
+            { id: '2048', name: '2048', icon: '🔢' },
+            { id: 'blackblocks', name: 'Black Blocks', icon: '⬛' },
+            { id: 'breakout-bricks', name: 'Breakout Bricks', icon: '🧱' },
+            { id: 'crossy-road', name: 'Crossy Road', icon: '🐔' },
+            { id: 'gomoku', name: 'Gomoku', icon: '⚫' },
+            { id: 'minesweeper', name: 'Minesweeper', icon: '💣' },
+            { id: 'ping-pong', name: 'Ping Pong', icon: '🏓' },
+            { id: 'shudu', name: 'Sudoku', icon: '🔢' },
+            { id: 'snake', name: 'Snake', icon: '🐍' },
+            { id: 'tetris', name: 'Tetris', icon: '🎮' },
+            { id: 'tower-blocks', name: 'Tower Blocks', icon: '🏗️' },
+            { id: 'toy-claw', name: 'Toy Claw', icon: '🧸' }
+        ];
+
+        const gameGrid = document.getElementById('gameGrid');
+
+        games.forEach(game => {
+            const card = document.createElement('a');
+            card.className = 'game-card';
+            card.href = `${game.id}/index.html`;
+
+            card.innerHTML = `
+                <span class="game-icon">${game.icon}</span>
+                <div class="game-name">${game.name}</div>
+                <span class="play-btn">开始游戏</span>
+            `;
+
+            gameGrid.appendChild(card);
+        });
+    </script>
+</body>
+</html>
