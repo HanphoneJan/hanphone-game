@@ -74,9 +74,9 @@ hanphone-game/
 └── README.md           # 项目说明文档
 ```
 ## Star History
-
+<a href="https://www.star-history.com/?repos=HanphoneJan%2Fhanphone-game&type=date">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=HanphoneJan/hanphone-game&type=Date&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=HanphoneJan/hanphone-game&type=Date" />
-  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=HanphoneJan/hanphone-game&type=Date" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=HanphoneJan/hanphone-game&type=Date&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=HanphoneJan/hanphone-game&type=Date" />
+  <img alt="Star History Chart" src="https://api.star-history.com/image?repos=HanphoneJan/hanphone-game&type=Datelegend=top-left&v=7" />
 </picture>
